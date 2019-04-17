@@ -1,5 +1,3 @@
-package sample;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -13,7 +11,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("MainView.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("gui/MainView.fxml"));
             ScrollPane scrollPane = loader.load();
 
             scrollPane.setFitToHeight(true);
